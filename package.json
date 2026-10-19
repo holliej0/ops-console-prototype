@@ -1,0 +1,25 @@
+{
+  "name": "ops-console-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive prototype of an operations console for triaging medical supply shipment exceptions, built on the Relay design system.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "typecheck": "tsc --noEmit",
+    "sync-ds": "rm -rf design-system/components design-system/styles && cp -r ../relay-design-system/src/components ../relay-design-system/src/styles ../relay-design-system/src/tokens.ts design-system/ && find design-system -name '*.stories.tsx' -delete"
+  },
+  "dependencies": {
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}
